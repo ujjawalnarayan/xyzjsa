@@ -276,7 +276,7 @@ for hij in lines :
 						captcha = page_soup.findAll("li",{"class" : "a-last"})
 						len_captcha = len(captcha)
 			except :
-				sleep(2)
+				
 				print "sleeping due to connection errors"
 				try : 
 
@@ -311,7 +311,7 @@ for hij in lines :
 						len_captcha = len(captcha)
 
 				except :
-					sleep(2)
+					
 					print "sleeping due to connection error"
 					req = urllib2.Request(site, headers=hdr)
 					cj = cookielib.CookieJar()
